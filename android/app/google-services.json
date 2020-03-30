@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "977465953999",
+    "firebase_url": "https://just-training-66adc.firebaseio.com",
+    "project_id": "just-training-66adc",
+    "storage_bucket": "just-training-66adc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:977465953999:android:41ee0daeef317be63c31ba",
+        "android_client_info": {
+          "package_name": "com.justtraining"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "977465953999-3cvlp8t5hqtdgqoblr3fn979ukf8cvr0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8JFjgroH4VF5oa4oyOHY9MtY0lYV70Po"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "977465953999-3cvlp8t5hqtdgqoblr3fn979ukf8cvr0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
