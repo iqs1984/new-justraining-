@@ -11,7 +11,7 @@ export const CouponView = (props) => {
         <Card style={CouponsCardViewStyle.container}>
             <View style={CouponsCardViewStyle.container2}>
                 <View>
-                    <Image resizeMode={'stretch'} source={
+                    <Image source={
                         {
                             uri: props.data.image.url
                         }

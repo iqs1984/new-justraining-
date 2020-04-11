@@ -9,6 +9,6 @@ export const CouponStyle = StyleSheet.create({
     },
     scrollView: {
         flex: 1,
-        padding: scale(16),
+        padding: scale(10),
     },
 });

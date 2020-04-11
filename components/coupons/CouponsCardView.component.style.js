@@ -18,13 +18,13 @@ export const CouponsCardViewStyle = StyleSheet.create({
     couponTitle: {
         fontFamily: Platform.OS === "ios" ? theme.FONT_FAMILY : theme.FONT_FAMILY_ANDROID_SEMI_BOLD,
         fontWeight: theme.FONT_WEIGHT_SEMI_BOLD,
-        fontSize: scale(theme.FONT_SIZE_MEDIUM),
+        fontSize: scale(20),
         color: theme.PRIMARY_COLOR,
     },
     descText: {
-        fontFamily: theme.FONT_FAMILY,
+        fontFamily: theme.FONT_FAMILY_LIGHT,
         fontWeight: theme.FONT_WEIGHT_MEDIUM,
-        fontSize: scale(theme.FONT_SIZE_SMALL),
+        fontSize: scale(15),
         color: theme.PRIMARY_COLOR,
     },
     titlesContainer: {
@@ -33,8 +33,8 @@ export const CouponsCardViewStyle = StyleSheet.create({
     couponImage: {
         margin: scale(8),
         marginLeft: 0,
-        width: scale(80),
-        height: scale(80),
+        width: scale(100),
+        height: scale(100),
     },
     percentageContainer: {
         // backgroundColor: theme.PRIMARY_COLOR,
@@ -42,14 +42,12 @@ export const CouponsCardViewStyle = StyleSheet.create({
         // width: scale(40),
         // borderRadius: scale(25),
         justifyContent: 'center',
-        alignItems: 'flex-start',
-        marginTop: scale(8)
+        alignItems: 'flex-start'
     },
     percentageText: {
         fontFamily: theme.FONT_FAMILY,
         fontWeight: theme.FONT_WEIGHT_MEDIUM,
         fontSize: scale(theme.FONT_SIZE_MEDIUM),
         color: theme.NAVIGATION_BAR,
-        textAlign: 'center',
     },
 });

@@ -1,6 +1,5 @@
 export const ACCESS_TOKEN = ""
-export const BASE_URL = "http://159.65.162.1/motion/services/"
-// export const BASE_URL = "http://glamyi.com/just-training/services/"
+export const BASE_URL = "http://159.65.162.1/justTraining/services/"
 export const LOGIN = "login"
 export const USER = "retrieve/user"
 export const MESSAGES = "retrieve/messages"

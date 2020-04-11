@@ -8,14 +8,14 @@ class Fire {
 
     init = () =>
         firebase.initializeApp({
-            apiKey: "AIzaSyDgkP0LfFnii8iQt442y7VV-UnUDoaDKhY",
-            authDomain: "just-training-new-f656b.firebaseapp.com",
-            databaseURL: "https://just-training-new-f656b.firebaseio.com",
-            projectId: "just-training-new-f656b",
-            storageBucket: "just-training-new-f656b.appspot.com",
-            messagingSenderId: "540054633175",
-            appId: "1:540054633175:web:788f96f01db135caee4e92",
-            measurementId: "G-WPRZN1SN87"
+            apiKey: "AIzaSyB3zVkaBPfUJjHbY_lez6i1Tymz4Pm1hC0",
+            authDomain: "just-training-66adc.firebaseapp.com",
+            databaseURL: "https://just-training-66adc.firebaseio.com",
+            projectId: "just-training-66adc",
+            storageBucket: "just-training-66adc.appspot.com",
+            messagingSenderId: "977465953999",
+            appId: "1:977465953999:web:a66069e2b71b7b103c31ba",
+            measurementId: "G-9R4FDJ7Y71"
         });
 
     observeAuth = () =>

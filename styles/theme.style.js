@@ -17,6 +17,7 @@ export default {
 
 //font
     FONT_FAMILY_ANDROID_SEMI_BOLD: 'WorkSans-SemiBold',
+    FONT_FAMILY_LIGHT: 'WorkSans-Light',
     FONT_FAMILY: 'WorkSans-Medium',
     FONT_WEIGHT_EXTRA_LIGHT: '200',
     FONT_WEIGHT_LIGHT: '300',
