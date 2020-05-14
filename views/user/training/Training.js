@@ -154,7 +154,7 @@ export class Training extends React.Component {
                                         })
                                     }}>
                                         <Text style={TrainingStyle.buttonText}>
-                                            CONFIRM
+                                            Read
                                         </Text>
                                     </Button>
                                     <View style={{width: scale(16)}}/>
@@ -167,7 +167,7 @@ export class Training extends React.Component {
                                         })
                                     }}>
                                         <Text style={TrainingStyle.buttonText}>
-                                            DON'T GO
+                                            Dismiss
                                         </Text>
                                     </Button>
                                 </View>}

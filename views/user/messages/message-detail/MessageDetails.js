@@ -7,9 +7,12 @@ import {VideoView} from '../../../../components/video-view/VideoView.component';
 import {MessageModel} from "../../../../model/message-model/MessageModel";
 import {BackgroundView} from "../../../../components/background-view/BackgroundView.component";
 import ImageViewer from "react-native-image-zoom-viewer";
-import {Button, Card} from "native-base";
+import {Button, Card, Text} from "native-base";
 import Icon from "react-native-vector-icons/Feather";
 import theme from "../../../../styles/theme.style";
+import {TrainingStyle} from "../../training/Training.style";
+import {TrainingModel} from "../../../../model/training-model/TrainingModel";
+import {scale} from "../../../../styles/scale.style";
 
 export class MessageDetails extends React.Component {
 
@@ -23,13 +26,17 @@ export class MessageDetails extends React.Component {
 
     componentDidMount(): void {
         const {id} = this.props.navigation.state.params
+        this.getMessage(id)
+        // MessageModel.readMessage(id, false)
+    }
+
+    getMessage = (id) => {
         MessageModel.getMessage(id).then(({message_model}) => {
             this.setState({
                 'message': message_model
             })
         })
     }
-
     isVisible = () => {
         this.setState({
             visible: true
@@ -45,6 +52,16 @@ export class MessageDetails extends React.Component {
                     <ScrollView style={MessageDetailsStyle.scrollview}>
                         {message &&
                         <DetailCard type={"message"} data={message} isVisible={this.isVisible}/>}
+                        {message && message.pivot.seen_at === null &&
+                        <Button style={[TrainingStyle.confirmed, {marginBottom: scale(100)}]} onPress={() => {
+                            MessageModel.readMessage(message.id, true).then(() => {
+                                this.getMessage(message.id)
+                            })
+                        }}>
+                            <Text style={TrainingStyle.buttonText}>
+                                Read
+                            </Text>
+                        </Button>}
                     </ScrollView>
                 </View>
             </View>

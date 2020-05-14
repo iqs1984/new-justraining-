@@ -1,5 +1,5 @@
 import {Service} from "../../service/Service";
-import {CREATE_MESSAGE, MESSAGE, MESSAGES, TRAINING} from "../../env";
+import {CREATE_MESSAGE, MESSAGE, MESSAGES, READ_MESSAGE, TRAINING} from "../../env";
 
 export class MessageModel {
 
@@ -26,5 +26,14 @@ export class MessageModel {
             spinner: true
         })
         return data
+    }
+
+    static readMessage = async (message_id, notify) => {
+        const data = await Service.sendPost(READ_MESSAGE, {
+            message_id
+        }, {
+            notify: notify,
+            spinner: true
+        })
     }
 }
