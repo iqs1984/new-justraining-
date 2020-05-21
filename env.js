@@ -1,5 +1,5 @@
 export const ACCESS_TOKEN = ""
-export const BASE_URL = "http://159.65.162.1/justTraining/services/"
+export const BASE_URL = "http://69.55.59.121/services/"
 export const LOGIN = "login"
 export const USER = "retrieve/user"
 export const MESSAGES = "retrieve/messages"
